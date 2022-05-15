@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7c99ff98d.js" crossorigin="anonymous"></script>
+    <title>Suscribite al Pregonero</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" role="navigation">
+        <div class="navbar__top">
+          <h2>
+            <a href="/index.html">
+              <i class="fa-regular fa-newspaper"></i>
+              <span>Diario el pregonero</span>
+            </a>
+          </h2>
+          <form class="search_bar">
+            <input id="search_input" type="search" name="search" placeholder="Buscar artículo">
+            <button type="submit" class="icon fa fa-search navbar__search_btn" aria-hidden="true"></button>
+          </form>
+          <button type="button" class="navbar__hamburger_btn" onclick="toggleNavbarMenu()">
+            <i class="icon fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul class="navbar__menu hidden" id="navbar-menu">
+          <li class="navbar__link-cat"><a href="/index.html">Todas las noticias</a></li>
+          <li class="navbar__link-cat"><a href="#">Política</a></li>
+          <li class="navbar__link-cat"><a href="#">Deporte</a></li>
+          <li class="navbar__link-cat"><a href="#">Policiales</a></li>
+          <li class="navbar__link-cat"><a href="#">Economía</a></li>
+          <li class="navbar__link-cat"><a href="#">Tecnología</a></li>
+          <li class="navbar__link-cat"><a href="#">Local</a></li>
+          <li class="navbar__link-cat"><a href="#">Educación</a></li>
+          <li class="navbar__link-cat sub active"><a href="/subscribe.html">SUSCRIBIRSE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container form_container">
+      <h1>Suscribite</h1>
+      <form>
+        <div class="form-control">
+          <label for="firstname">Nombre</label>
+          <input id="firstname" type="text" name="firstname" required>
+        </div>
+        <div class="form-control">
+          <label for="lastname">Apellido</label>
+          <input id="lastname" type="text" name="lastname" required>
+        </div>
+        <div class="form-control">
+          <label for="email">Correo electrónico</label>
+          <input id="email" type="email" name="email" required>
+        </div>
+        <div class="form-control">
+          <label for="password">Contraseña</label>
+          <input type="password" id="password" name="password" required minlength="4">
+        </div>
+        <button class="btn" type="submit">Suscribirse</button>
+      </form>
+    </main>
+
+    <footer class="app_footer">
+      <ul class="app_footer__menu">
+        <li class="app_footer__btn btn_home">
+          <a href="index.html">
+            <i class="icon fa-solid fa-house"></i>
+          Inicio
+          </a>
+        </li>
+        <li class="app_footer__btn">
+          <a href="#">
+            <i class="icon fa-regular fa-bookmark"></i>
+          </a>
+        </li>
+        <li class="app_footer__btn">
+          <a href="#">
+            <i class="icon fa-regular fa-bell"></i>
+          </a>
+        </li>
+        <li class="app_footer__btn">
+          <a href="#">
+            <i class="icon fa-regular fa-user"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <footer class="desktop_footer">
+      <section>
+        <h5>Conocenos</h5>
+        <ul class="desktop_footer__menu">
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Profesionales</h5>
+        <ul class="desktop_footer__menu">
+          <li><a href="#">Sumate a nuestro equipo</a></li>
+          <li><a href="#">Periodistas</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Seguinos</h5>
+        <ul class="desktop_footer__menu">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook social_icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter social_icon"></i></a>
+          </li>
+          <li><a href="#"><i class="fa-brands fa-instagram social_icon"></i></a></li>
+        </ul>
+      </section>
+    </footer>
+
+    <script>
+      const navbarMenu = document.getElementById('navbar-menu');
+      function toggleNavbarMenu() {
+        navbarMenu.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>

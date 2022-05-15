@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7c99ff98d.js" crossorigin="anonymous"></script>
+    <title>Diario el Pregonero</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" role="navigation">
+        <div class="navbar__top">
+          <h2>
+            <a href="/index.html">
+              <i class="fa-regular fa-newspaper"></i>
+              <span>Diario el pregonero</span>
+            </a>
+          </h2>
+          <form class="search_bar">
+            <input id="search_input" type="search" name="search" placeholder="Buscar artículo">
+            <button type="submit" class="icon fa fa-search navbar__search_btn" aria-hidden="true"></button>
+          </form>
+          <button type="button" class="navbar__hamburger_btn" onclick="toggleNavbarMenu()">
+            <i class="icon fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <ul class="navbar__menu hidden" id="navbar-menu">
+          <li class="navbar__link-cat active"><a href="index.html">Todas las noticias</a></li>
+          <li class="navbar__link-cat"><a href="#">Política</a></li>
+          <li class="navbar__link-cat"><a href="#">Deporte</a></li>
+          <li class="navbar__link-cat"><a href="#">Policiales</a></li>
+          <li class="navbar__link-cat"><a href="#">Economía</a></li>
+          <li class="navbar__link-cat"><a href="#">Tecnología</a></li>
+          <li class="navbar__link-cat"><a href="#">Local</a></li>
+          <li class="navbar__link-cat"><a href="#">Educación</a></li>
+          <li class="navbar__link-cat sub"><a href="/subscribe.html">SUSCRIBIRSE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Todas las noticias</h1>
+      <div class="card">
+        <div class="card__header">
+          <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?cs=srgb&dl=pexels-expect-best-323705.jpg&fm=jpg" alt="">
+          <p class="date">Hace 10 minutos</p>
+        </div>
+        <div class="card__body">
+          <h3 class="card__link-title"><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></h3>
+          <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quasi, illum praesentium at soluta quis rerum aliquid nemo.</p>
+        </div>
+      </div>
+      <div class="card_container">
+        <h2 class="card__container__title">Último momento</h2>
+        <div class="card_small">
+          <img src="https://images.pexels.com/photos/2265634/pexels-photo-2265634.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <p><small>14/05/2022 - 14:25</small></p>
+          <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, sapiente!</a></h3>
+        </div>
+        <div class="card_small">
+          <img src="https://images.pexels.com/photos/2058147/pexels-photo-2058147.jpeg?auto=compress&cs=tinysrgb&w=500&h=500&dpr=1" alt="">
+          <p><small>14/05/2022 - 13:00</small></p>
+          <h3><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+        </div>
+        <div class="card_small">
+          <img src="https://images.pexels.com/photos/164661/pexels-photo-164661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+          <p><small>14/05/2022 - 12:10</small></p>
+          <h3><a href="#">Lorem ipsum dolor, sit amet consectetur adipisicing.</a></h3>
+        </div>
+        
+      </div>
+
+    </main>
+    <footer class="app_footer">
+      <ul class="app_footer__menu">
+        <li class="app_footer__btn btn_home">
+          <a href="#">
+            <i class="icon fa-solid fa-house"></i>
+          Inicio
+          </a>
+        </li>
+        <li class="app_footer__btn">
+          <a href="#">
+            <i class="icon fa-regular fa-bookmark"></i>
+          </a>
+        </li>
+        <li class="app_footer__btn">
+          <a href="#">
+            <i class="icon fa-regular fa-bell"></i>
+          </a>
+        </li>
+        <li class="app_footer__btn">
+          <a href="#">
+            <i class="icon fa-regular fa-user"></i>
+          </a>
+        </li>
+        
+      </ul>
+    </footer>
+
+    <footer class="desktop_footer">
+      <section>
+        <h5>Conocenos</h5>
+        <ul class="desktop_footer__menu">
+          <li><a href="#">Quiénes somos</a></li>
+          <li><a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Profesionales</h5>
+        <ul class="desktop_footer__menu">
+          <li><a href="#">Sumate a nuestro equipo</a></li>
+          <li><a href="#">Periodistas</a></li>
+          <li><a href="#">Lorem, ipsum.</a></li>
+        </ul>
+      </section>
+      <section>
+        <h5>Seguinos</h5>
+        <ul class="desktop_footer__menu">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook social_icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter social_icon"></i></a>
+          </li>
+          <li><a href="#"><i class="fa-brands fa-instagram social_icon"></i></a></li>
+        </ul>
+      </section>
+    </footer>
+
+    <script>
+      const navbarMenu = document.getElementById('navbar-menu');
+      function toggleNavbarMenu() {
+        navbarMenu.classList.toggle('hidden');
+      }
+    </script>
+  </body>
+</html>
