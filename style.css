@@ -322,6 +322,28 @@ input {
   border-radius: 8px;
 }
 
+input.error {
+  border-color: #ef4444;
+}
+
+div.error {
+  height: 4px;
+  margin-top: 4px;
+}
+
+div.error p.errorMessage, label.error {
+  color: #ef4444;
+}
+
+div.error p {
+  display: none;
+}
+
+div.error--shown p.errorMessage {
+  display: block;
+}
+
+
 @media (min-width: 978px) {
   .container {
     margin: 2rem 4rem;
@@ -400,6 +422,17 @@ input {
   .form_container {
     width: 50%;
     align-self: center;
+  }
+
+  form.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 0.5rem;
+  }
+
+  form.form .form-control {
+    /* flex: 0 50%; */
+    width: calc(1/2*100% - (1 - 1/2)*10px);
   }
 
 }
